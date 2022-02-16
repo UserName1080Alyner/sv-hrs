@@ -4,7 +4,7 @@ const pass = "123452"; //Authme plugini şifresi (Plugin yoksa silmeyin)
 const bot = mineflayer.createBot({
     host: "lokycraft.tk", //Sunucunuzun ipsi //Değiştirme!!!
     username: "24HRS", //Botun ismi Kafanıza Göre
-    version: '1.8.8'
+   version: '1.8.8'
 });
 
 
@@ -32,7 +32,7 @@ function bindEvents(bot) {
   
   function relog() {
     console.log("Sunucuya tekrardan bağlanılıyor");
-    bot = mineflayer.createBot(bot);
+    bot = mineflayer.createBot(ayar);
     
     bot.on('chat', function(username, message) {
       if (username === bot.username) return;
