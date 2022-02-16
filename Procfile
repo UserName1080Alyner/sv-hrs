@@ -1,1 +1,1 @@
-worker: npm install mineflayer
+worker: npm install mineflayer && node .
