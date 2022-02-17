@@ -12,6 +12,7 @@ bot.on('chat', function(username, message) {
   if (username === bot.username) return;
   function intervalFunc() {
     bot.setControlState('forward', true)
+    bot.setControlState('jump', true)
   }
   setInterval(intervalFunc,7000);
   console.log('Sunucuya Giriş Yapıldı!');
